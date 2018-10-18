@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  background-color: #ECEEF1;
+  background-color: #ECEEF1;
+}
+/* HEADER STYLES */
+header{
+  width: 100%;
+  padding: 5px 20px;
+  margin-left: 1550px;
+  /* text-align: right; */
+}
+/* RIGHT CORNER WITHIN HEADER */
+.rightcorner p{
+  font-size: 12px;
+  font-family: arial;
+  width: 200px;
+  margin: 5px;
+}
+.rightcorner p a{
+  text-decoration: none;
+  color: #0077C5;
+}
+/* FLOAT CONTAINERS ON HEADER */
+.float1{
+  width: 200px;
+  float: left;
+}
+.float2{
+  width: 110px;
+  float: left;
+  height: 40px;
+}
+.float2 button{
+  width: 100%;
+  height: 100%;
+  background-color: #0077C5;
+  font-size: 13px;
+  color: white;
+  border-radius: 10%;
+  border: 1px solid black;
+}
+.float2 button i{
+  margin-right: 3px;
+}
+/* HEADER STYLE COMPLETED */
+/* MAIN CONTAINER STYLE */
+.main{
+  clear: both;
+  text-align: center;
+  font-family: arial;
+}
+/* H1 STYLE */
+h1{
+  font-size: 40px;
+  padding-top: 25px;
+  color: #8D9096;
+  margin: 0px 0px 10px 0px;
+}
+/* FORM CONTAINING THE FORM THUS ELEMENTS */
+.form{
+  width: 375px;
+  text-align: center;
+  padding: 30px;
+  border: 1px solid #8D9096;
+  background-color: white;
+  margin: 0 auto;
+}
+/* ICONS STYLE */
+.icons{
+  width: 100%;
+  height: 48px;
+  font-size: 17px;
+  color: #8D9096;
+  border-bottom: 1px solid #ECEEF1;
+}
+.icons i{
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px;
+  margin-right: 4px;
+}
+  /* background-color: #00A6A4; */
+#green{
+  background-color: #2CA01C;
+  color: white;
+  font-size: 17px;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+/* ICONS SECTION STYLE ENDS */
+.text{
+  margin-top: 20px;
+}
+.text > h2{
+  margin: 2px;
+  font-weight: lighter;
+}
+.text > p{
+  width: 280px;
+  font-size: 14px;
+  margin: 20px auto;
+}
+.text a{
+  text-decoration: none;
+  font-size: 12px;
+  color: #0077C5;
+}
+/* FORM STYLE BEGINS */
+.questions{
+  text-align: left;
+  font-size: 14px;
+}
+.questions input{
+  width: 100%;
+  height: 35px;
+  border: 1px solid #C1C5C8;
+  border-radius: 4.5%;
+  padding-top: 5px;
+}
+button{
+  width: 100%;
+  height: 46px;
+  background-color: #0077C5;
+  font-size: 16px;
+  color: white;
+  border-radius: 4.5%;
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+.questions button i{
+  margin-right: 8px;
+}
+/* FORM QUESTIONS STYLES END */
+.privacyrights{
+  margin-top: 30px;
+  margin: 25px auto;
+  color: #8D9096;
+  font-size: 12px;
+  text-align: center;
+  width: 250px;
+}
+p a{
+  text-decoration: none;
+  color: #0077C5;
+}
+/* MAIN CONTENT & FORM ENDS */
+/* FOOTER STYLES TO BE APPLIED NOW */
+footer h4{
+  margin-top: 50px;
+  color: #8D9096;
+}
+footer p{
+  font-size: 12px;
+  width: 780px;
+  margin: auto;
+  color: #8D9096;
+}
+footer a{
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px 5px 0px 0px;
+  color: #8D9096;
+}
