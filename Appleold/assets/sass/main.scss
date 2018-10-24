@@ -1,0 +1,230 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+
+*{
+  box-sizing: border-box;
+}
+body {
+  // font-family: 'Roboto', sans-serif;
+  // background: purple;
+  max-width: 1440px;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  background-color: white;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+// NAVIGATION BAR STYLES
+nav{
+position: relative;
+top: 18px;
+width: 980px;
+height: 36px;
+display: block;
+margin: 0 auto;
+border-radius: 5px;
+box-shadow:  0 1px 2px rgba(0,0,0,0.3);
+z-index: 9998;
+// UL WITHIN NAV
+ul{
+  display: inline-block;
+  width: 845px;
+  table-layout: fixed;
+  list-style: none;
+  background: -moz-radial-gradient(center, ellipse cover, #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  box-shadow: inset 0px 1px 3px #555, 0px 1px 2px #222;
+  // LI WITHIN NAV
+  li{
+    display: table-cell;
+    width: 100%;
+    overflow: hidden;
+    height: 36px;
+    width: 107px;
+    // CENTER VERTICALLY CONTENT WHITHIN LI
+    line-height: 36px;
+    text-align: center;
+    font-size: 12px;
+    border-right: 1px solid #626262;
+    text-shadow: 1px 1px #505050;
+    // LINKS WITHIN LI
+    a{
+      display: inline-block;
+      // TAKE FULL CONTAINER OF LI
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: white;
+      // THE APPLE IMAGE WITHIN NAV
+      img{
+        // CENTERING IMG WITHIN LI
+        vertical-align: middle;
+      }
+    }
+    // LINKS END HERE
+    a:hover{
+      background-color: white;
+      color: #A6C1D6;
+      font-weight: 500;
+    }
+  }
+  // LI ENDS HERE
+ }
+}
+// SEARCH & ICON CONTAINER
+  .inputfield{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 140px;
+    z-index: 5;
+    background: -moz-radial-gradient(center, ellipse cover, #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    box-shadow: 0px 1px 2px #222;
+    // SEARCH FA ICON
+    .fa-search{
+      position: absolute;
+      top: 12px;
+      left: 24px;
+      font-size: 12px;
+      color: white;
+    }
+  }
+// SEARCH FIELD
+input[type=text]{
+  width: 105px;
+  height: 24px;
+  margin: 7px 10px 5px 18px;
+  border-radius: 12px;
+  background: -moz-radial-gradient(center, ellipse cover, #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  box-shadow: 0px 1px 2px #222;
+  // LI WITHIN NAV
+}
+//MAINCONTAINER STYLES
+.maincontainer{
+  // CENTER AREO OF IMG I WANT TO SHOW ON A DETERMINED WIDTH AND HEIGHT
+   background: url(../img/background.jpg) 50% 100% no-repeat;
+   width: 1450px;
+   height: 665px;
+   position: absolute;
+   display: block;
+   top: 0px;
+   // HEADER
+   header{
+     display: block;
+     width: 100%;
+     position: absolute;
+     top: 35%;
+     // H1 STYLES WHITHIN HEADER
+     h1{
+       font-size: 58px;
+       font-weight: 200;
+       text-align: center;
+       a{
+         text-decoration: none;
+         color: white;
+       }
+     }
+     // H2 STYLES WHITHIN HEADER
+     h2{
+       font-size: 30px;
+       font-weight: 300;
+       width: 790px;
+       // text-align: center;
+       margin: 0 auto;
+       padding-top: 20px;
+       a{
+         text-decoration: none;
+         color: white;
+       }
+     }
+     // H3 STYLES WHITHIN HEADER
+     h3{
+       font-size: 23px;
+       font-weight: 300;
+       width: 560px;
+       padding-top: 35px;
+       margin: 0 auto;
+       a{
+         text-decoration: none;
+         color: white;
+       }
+     }
+   }
+   // HEADER SECTION ONTO IMG BACKGROUND ENDS
+}
+// MAINCONTAINER WITH  IMG WITHIN ENDS
+
+// HORIZONTAL PICTURES CONTAINER
+.inlinedisplayed{
+  display: block;
+  position: absolute;
+  top: 667px;
+  // IMAGES TO BE FLOATED
+  .img1{
+    float: left;
+    img{
+      width: 360px;
+      height: 200px;
+      margin: 1px;
+    }
+  }
+  // IMAGES FLOATED CONTAINER ENDS
+}
+// SECTION FLOATED
+footer{
+  position: absolute;
+  top: 870px;
+  width: 1450px;
+  padding-top: 20px;
+  p{
+    width: 500px;
+    color: #6e6e6e;
+    font-size: .7334em;
+    margin-left: 220px;
+    padding-bottom: 15px;
+    display: inline-block;
+    a{
+      text-decoration: none;
+      font-size: .7334em;
+      color: #08c;
+    }
+  }
+  .list{
+    width: 700px;
+    display: inline-block;
+    ul{
+      width: 700px;
+      li{
+        display: inline-block;
+        a{
+          font-size: .7334em;
+          color: #08c;
+          text-decoration: none;
+          border-right: 1px solid #6e6e6e;
+          padding-right: 5px;
+          line-height: 1.2;
+          img{
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+          }
+          // LAST IMAGE FROM FOOTER LIST STYLES END
+        }
+        // LINKS FROM FOOTER LIST STYLES END
+      }
+      // LIST FROM FOOTER END
+    }
+    // UNORDERED LIST END
+  }
+  // CONTAINER WITH LIST ENDS
+}
+// FOOTER ENDS
