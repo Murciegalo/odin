@@ -1,0 +1,268 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  // background: purple;
+}
+nav{
+  max-width: 100%;
+  ul{
+    background-color: #131313;
+    li{
+      float: left;
+      margin-left: 12px;
+      padding: .5em 0;
+      a{
+        text-decoration: none;
+        font-size: .8em;
+        font-weight: 500;
+        color: #888;
+      }
+      a:hover{
+          color: white;
+      }
+    }
+    // LI ENDS HERE
+    .right{
+      float: right;
+      margin-right: 12px;
+    }
+  }
+  // UNORDERED LIST DIV ENDS
+}
+// NAV CONTAINER 1 STYLES ENDS HERE
+// CLEAR FIX FOR UL AFTER FLOTED ELEMENTS
+ul:after{
+  content: " ";
+  display: table;
+  clear: both;
+}
+// nav:after {
+//   content: "";
+//   display: table;
+//   clear: both;
+// }
+// CLEAR FIX AFTER FLOATING ELEMENTS
+
+// HOVER ON NAV 1
+//------------------------------------SECOND NAV
+.secondnav{
+  ul{
+    background-color: #FDFDFD;
+    width: 100%;
+    li{
+      float: left;
+      margin-left: 6px;
+      padding: 1em 0.4em;
+      a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #7E7E7E;
+        font-size: .9em;
+      }
+    }
+    // FIRST LIST IN SECOND NAV DIV, ENDS HERE
+    .right{
+      float: right !important;
+      margin-right: 10px;
+      padding: 1em .3em;
+    }
+    #remove-margin{
+      padding: 0em .3em!important;
+      color: #7E7E7E;
+    }
+    // ESPECIAL MARGIN FOR COUNTER REMOVED FROM RIGHT CLASS
+    .font{
+      text-transform: uppercase;
+      color: #7E7E81;
+      font-size: .6em;
+      margin-top: 1.4em;
+      padding: 1em 0em!important;
+    }
+  }
+  // FIRST UNORDERED LIST IN SECOND NAV ENDS HERE
+}
+// SECOND NAV CONTAINER ENDS HERE
+// CLEAR FIX FOR UL AFTER FLOTED ELEMENTS
+ul:after{
+  content: " ";
+  display: table;
+  clear: both;
+}
+.amsterdam{
+  background-color: #FFDD33;
+  position: relative;
+  line-height: 30px;
+  padding-left: .8em;
+  a{
+    font-size: .9em;
+    text-decoration: none;
+    color: black;
+    img{
+      vertical-align: middle;
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+// AMSTERDAM BUSINESS SECTION ENDS HERE
+.images{
+  padding: .2em 0.5em;
+  .img1{
+    width: 1260px;
+    height: 330px;
+    float: left;
+    margin-right: .5em;
+  }
+  .img2{
+    width: 626px;
+    height: 160px;
+  }
+  .img3{
+    width: 626px;
+    height: 160px;
+    margin-top: .4em;
+  }
+}
+// IMAGES SECTION ENDS HERE
+.latestnews{
+  h2{
+      width: 100%;
+      margin: .8em .4em;
+      font-size: 1.7em;
+      font-weight: bolder;
+      color: #FD4322;
+  }
+  .wrapped-articles{
+    width: 1200px;
+    margin: 0 auto;
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        padding: 12px;
+        .article1{
+          width: 270px;
+          p{
+            width: 240px;
+            font-weight: 900;
+            margin: .8em 0;
+          }
+          h6{
+            font-size: .8em;
+            color: #aaa;
+          }
+        }
+        // ARTICLE1 TO BE FLOATED ALONG WITH + , DIV ENDS HERE
+      }
+    }
+  }
+  // WRAPPED ARTICLES SECTION ENDS HERE
+}
+// LATEST NEWS SECTION ENDS HERE
+
+
+// QUERIES TO BE ADDED FOR MEDIUM AND MOBILE DEVICES
+
+@media (max-width: 533px) {
+    nav{display: none;}
+    .secondnav{
+      ul{
+        li{
+          float: left;
+          .brand-logo{
+            position: absolute;
+            top: 6em;
+            left: .4em;
+            width: 15em;
+            }
+          }
+          // li ends here
+        .right{
+          float: none;
+          margin-right: 1em;
+        }
+        .search{display: none;}
+      }
+      // unordered list ends here
+    }
+    // secondnav ends here
+
+    // AMSTERDAM SECTION
+    .amsterdam{
+      a{
+        font-size: .8em;
+      }
+    }
+      // AMSTERDAM SECTION ENDS
+      .images{
+        max-width: 100%;
+        padding: 1em;
+        .img1{
+          max-width: 100%;
+          max-height: 160px;
+        }
+        .img2{
+          max-width: 100%;
+          margin-top: .3em;
+        }
+        .img3{
+          max-width: 100%;
+          margin-top: .3em;
+        }
+      }
+      // IMAGES SECTION ENDS HERE
+      .latestnews{
+        .wrapped-articles{
+          padding: 1em;
+          max-width: 100%;
+          h2{
+            margin: 0;
+          }
+          ul{
+            li{
+              padding: .5em 0em;
+              width: 100%;
+              .article1{
+                width: 100%;
+                img{
+                  width: 87px;
+                  height: 80px;
+                  float: left;
+                  margin-right: .5em;
+                }
+                p{
+                  width: 190px;
+                  font-weight: 500;
+                  font-size: .85em;
+                  float: left;
+                  margin: 0em .2em .9em .0em;
+                }
+               h6{
+                 clear: left;
+                 width: auto;
+                 display: inline-block;
+               }
+              }
+              // ARTICLES ON NEWS DIV ENDS HERE
+            }
+            // LI ENDS HERE
+          }
+// UNORDERED LIST CONTAINING LI & ARTICLES ENDS HERE
+        }
+        // WRAPPED ARTICLES SECTION ENDS HERE
+      }
+      // LATEST NEWS DIV ENDS HERE
+
+      // CLEARFIX FOR ARTICLE
+      .article1:after{
+        content: " ";
+        display: table;
+        clear: both;
+      }
+}
+// QUERIE FOR MOBILE DEVICES END HERE
