@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+// HEADER FONT FAMILY
+@import url('https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day');
+@import "reset";
+@import "summary";
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  // background: purple;
+  // font-family: 'Dawning of a New Day', cursive;
+}
+// HEADER STYLE
+header{
+  width: 100%;
+  // MARGINS WITHIN HEADER
+  .marginsides{
+    max-width: 1605px;
+    margin: 0 auto;
+    padding: 4px 15px 2px;
+    display: block;
+    height: 36px;
+    position: relative;
+  }
+  // ICONS ON HEADER
+  .icons{
+    // DIV1 FOR MENU ICON
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+            .menu{
+      // to float both icons I needed 3 floats due to divs hierarchy (1)
+                      // float: left;
+                      .fa{
+        // to float both icons I needed 3 floats due to divs hierarchy (2)
+                            // float: left;
+                            margin: 10px 10px;
+                            font-size: 14px;
+                            display: inline-block;
+                            }
+                          }
+    // DIV 1 FOR SEARCH ICON
+                .search{
+      // to float both icons I needed 3 floats due to divs hierarchy (3)
+                              // float: left;
+                              .fa{
+                                    margin: 10px 10px;
+                                    font-size: 14px;
+                                    display:inline-block;
+                                  }
+                              }
+  }
+  // TOPIC ON HEADER DIV2
+  .newtopic{
+    // float: left;
+    // POSITIONING DIV
+    display: block;
+    position: absolute;
+    top: 13px;
+    left: 105px;
+                    // STYLING DIV
+                    a{
+                      text-decoration: none;
+                      font-weight: 700;
+                      color: black;
+                      font-size: 0.75rem;
+                      letter-spacing: 0.05em;
+                    }
+  }
+  // NEW TOPIC STYLE & POSITIONING ENDS
+  // LOGO ON HEADER
+    .nyt{
+    // float: left;
+    // POSITIONING CONTENT ON DIV 3
+    text-align: center;
+            a{
+              display: block;
+              width: 195px;
+              height: 26px;
+              margin: 6px auto 0;
+            }
+    }
+  // BUTTONS ON HEADER , DIV 4 POSITIONING
+    .buttons{
+    // float: right;
+    position: absolute;
+    right: 10px;
+    top: 4px;
+                  // STYLING LINKS WITHIN BUTTONS
+                   a{
+                      button{
+                        font-size: 11px;
+                        font-weight: 700;
+                        color: #FFF;
+                        padding: 10px 10px 8px;
+                        border-radius: 3px;
+                        cursor: pointer;
+                        background-color: #6288a5;
+                        border: 1px solid #326891;
+                        letter-spacing: 0.05em;
+                        line-height: 11px;
+                      }
+                      :hover{
+                        transition: ease 0.8s;
+                        background-color: #326891;
+                      }
+                   }
+  }
+}
+// HEADER ENDSssssssssssssssssssssssssss
