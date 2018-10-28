@@ -1,0 +1,61 @@
+// CONTENT PAGE BEGINS.
+.mainvideos{
+  position: absolute;
+  width: 87%;;
+  height: 94%;
+  margin-top: 55px;
+  margin-left: 250px;
+  background-color: #FAFAFA;
+  // OVERALL STYLES WITHIN CONTENT PAGE
+  .center{
+    text-align: left;
+    margin: 20px 180px 30px 180px;
+    height: 280px;
+
+  }
+  // CENTER CONTENT ON PAGE DONE
+  h2{
+    font-weight: bold;
+    margin-bottom: 20px;
+    i{
+      color: red;
+     width: 26px;
+      height: 20px;
+    }
+    .fa{
+      font-size: 28px;
+      margin-right: 8px;
+    }
+  }
+  // H2 STYLE
+  // FLOAT CONTAINER BEGINS
+.float{
+      width: 210px;
+      // VIDEO CONTAINER
+      float: left;
+      height: 250px;
+      border-bottom: 2px solid #F0F0F0;
+    .Sheeran{
+       background: url("../img/YouTube.png") no-repeat center;
+       width: 210px;
+       height: 115px;
+       margin-bottom: 20px;
+       // PARAGRAPH BELOW VIDEO CAN
+       p{
+         font-size: 12px;
+         font-weight: 600;
+       }
+  }
+   // CONTAINER SHEERAN ENDS
+}
+// FLOAT CONTAINER SHEERAN ENDS
+}
+// LINKS STYLES APPLIED
+a{
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: grey;
+  font-size: 13px;
+  padding-top: 6px;
+}

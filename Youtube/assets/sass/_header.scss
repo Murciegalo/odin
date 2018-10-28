@@ -1,0 +1,65 @@
+header{
+  width: 100%;
+  height: 55px;
+  float: left;
+  border-bottom: 2px solid #F0F0F0;
+  position: relative;
+  .leftcorner{
+    i{
+      color: grey;
+      padding: 20px 20px 20px 30px;
+      float: left;
+    }
+    .imag{
+      background: url("../img/YouTub.png") no-repeat center center;
+      width: 100px;
+      height: 35px;
+      float: left;
+      margin-top: 12px;
+      margin-left: 10px;
+    }
+    }
+    // LEFTCORNER STYLE ENDS
+    // SEARCHFILED STYLE BEGINS
+    .search_field{
+      float: left;
+      margin: 12px 700px 15px 60px;
+      // INPUT STYLE
+      input{
+        width: 590px;
+        height: 30px;
+        font-size: 18px;
+        padding-left: 10px;
+        color: grey;
+        border: 1px solid grey;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+      }
+      // BUTTON STYLE
+      button{
+        margin-left: -6px;
+        height: 30px;
+        width: 65px;
+        border: 1px solid grey;
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 0%;
+      }
+    }
+    // SEARCH FIELD STYLE ENDS
+    // RIGHTCORNER STYLE BEGINS
+    .rightcorner{
+      // float: left
+      margin-left: 200px;
+      i{
+        float: left;
+        padding: 20px;
+        color: grey;
+      }
+      p{
+        float: left;
+        padding: 25px;
+        color: red;
+      }
+    }
+  }
+// HEADER ENDS

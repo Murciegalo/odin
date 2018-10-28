@@ -1,0 +1,130 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+@import "variables";
+@import "header";
+@import "content";
+// FIX BOX-SPACING
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  // background: purple;
+
+  // FA STYLES
+  .fa{
+    font-size: 20px;
+  }
+  #grey{
+    color: grey;
+    font-size: 10px;
+  }
+  #bottom{
+    color: grey;
+    font-size: 20px;
+  }
+  // END FA STYLES
+  .active{
+    font-weight: bold;
+  }
+  // END ACTIVE LINK
+
+  // SIDEMENU BEGINS
+  .sidemenu{
+    width: 13%;
+    height: 94%;
+    position: absolute;
+    background-color: $colorsidemenu;
+    margin-top: 55px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    // NAV
+    nav{
+      // LINKS
+      a{
+        width: 100%;
+        display: block;
+        text-decoration: none;
+        height: 21px;
+        color: black;
+        padding: 15px 20px 15px 30px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        // ICONS
+        i{
+          padding-right: 40px;
+          color: red;
+          width: 60px;
+          height: 20px;
+        }
+        // LINKS END
+        }
+        // MIDDLE
+        .middle{
+          display: block;
+          height: 40px;
+          border-top: 2px solid #F0F0F0;
+          border-bottom: 2px solid #F0F0F0;
+          padding: 15px 0px 15px 25px;
+          p{
+          color: grey;
+          font-size: 14px;
+          }
+          // PARAGRAPH ENDS
+        }
+        // MIDLE BROWSE CHANNELS
+    .middle1{
+      width: 100%;
+      height: 40px;
+      margin-top: 25px;
+    }
+    // MIDDLE SIGN IN
+    .middle2{
+      display: block;
+      height: 145px;
+      border-top: 2px solid #F0F0F0;
+      border-bottom: 2px solid #F0F0F0;
+      margin: 5px 0px;
+      p{
+      padding: 25px 30px 5px 30px;
+      color: grey;
+      font-size: 14px;
+      line-height: 25px;
+      display: block;
+      }
+      // END PARAGRAPH
+      button{
+        margin-left: 25px;
+        border: none;
+        color: red;
+        font-weight: 400;
+        font-size: 15px;
+      }
+      // BUTTON ENDS
+    }
+    // SIGN IN ENDS
+
+  // LAST ICONS
+.middle3{
+  height: 200px;
+  float: left;
+}
+// ENDS
+
+// COPYRIGHTS SECTION
+.copyright{
+  width: 100%;
+  p{
+    padding: 25px 40px 0px 30px;
+    color: grey;
+    font-size: 12px;
+    line-height: 25px;
+    display: block;
+    word-spacing: 6px;
+  }
+}
+}
+}
+// NAV BAR ENDS
+// SIDEMENU ENDS
+}
