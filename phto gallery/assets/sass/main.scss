@@ -1,0 +1,127 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+
+// RIGHT MEASURES
+*{
+  box-sizing: border-box;
+}
+html {
+    // WHEN WANT TO USE AN IMG TO AS BACKGROUND , NEEDS CSS TRICKS
+  background: url(../img/fondo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+// MAIN BODY STYLE FEATURES
+  text-align: center;
+  font-family: 'Skranji', cursive;
+}
+header{
+  h1{
+    font-size: 50px;
+    padding: 20px;
+    margin-top: 20px;
+    color: rgba(255 , 255, 255, .3);
+  }
+}
+main{
+
+  section{
+
+    h2{
+      font-size: 40px;
+      padding: 20px;
+      color: rgba(255 , 255, 255, .3)
+    }
+    // PHOTO CONTENT CENTERED
+    article{
+      max-width: 1200px;
+      margin: auto;
+      // border: 2px solid red;
+
+      h3{
+        margin-top: 45px;
+        margin-bottom:  60px;
+        padding: 8px 8px;
+        font-size: 30px;
+        color: rgba(255 , 255, 255, .3)
+      }
+      ul{
+
+        // DISPLAY
+        li{
+          display: inline-block;
+          position: relative;
+          z-index: 0;
+          // 1 SECOND SETTLE AS FOR PROPERTY TO ACHIEVE WISHED ANIMATION
+          transition: all 0.5s;
+         // ANCHOR CONTAINING ITSELF & IMG
+          a{
+            background-color: #fff;
+            box-shadow: inset 0 0 10px 3px rgba(0, 0, 0, .7);
+            margin: 0 6px 20px;
+            padding: 10px 10px 30px;
+            position: relative;
+            text-decoration: none;
+            z-index: 0;
+            display: inline-block;
+            // IMG
+            img{
+              display: block;
+              width: 300px;
+              height: auto;
+            }
+          }
+        }
+      }
+      // AFTER ANCHOR, SHOW ME ITS ATTRIBUTE
+      ul li a:after{
+        content: attr(title);
+        color: #333;
+        // FONT SIZES ALWAYS ON either em OR rem
+        font-size: 1.25em;
+        position: relative;
+        top: 12px;
+      }
+      // UNNORDERED ANCHOR PHOTOS ALIGNMENT
+      // 4 times n
+      ul li:nth-child(4n+1) {
+        transform: rotate(4deg);
+      }
+      ul li:nth-child(4n+3) {
+        transform: rotate(-24deg);
+      }
+      ul li:nth-child(2n+2) {
+        transform: rotate(14deg);
+      }
+      ul li:nth-child(5) {
+        transform: rotate(-8deg);
+      }
+      ul li:nth-child(6) {
+        transform: rotate(2deg);
+      }
+      // END PHOTOS ALIGNMENT
+
+      //HOVER ON ANCHOR PHOTOS BEGIN
+      ul li a:hover{
+        box-shadow: 0 0 15px 8px rgba(0, 0, 0, .8);
+      }
+      // HOVER ON FULL SECTION/IMG & ANCHOR
+      ul li:hover{
+        transform: rotate(0deg) scale(1.2);
+        // ENTIRE VALUES > 0 . FOR +3 ELEMENTS -> Z-INDEX VALUE TO BE SET ON 100
+        z-index: 10;
+
+      }
+    }
+  }
+}
+footer{
+  margin-top: 50px;
+  color: rgba;
+  color: rgba(255,255,255,0.7);
+  padding: 20px;
+  border-top: 1px solid rgba(255,255,255, 0.3);
+}
