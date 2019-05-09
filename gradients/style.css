@@ -1,0 +1,42 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+/* RADIAL GRADIENTS */
+
+.caja1 {
+    width: 200px;
+    height: 200px;
+    background: -webkit-radial-gradient(center, circle red 40%, white 60%);
+    border: 1px solid black;
+    margin: 10px auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px;
+}
+
+
+/* + IMAGE */
+
+.caja2 {
+    width: 200px;
+    height: 200px;
+    background: -webkit-radial-gradient(center, circle red 40%, white 60%), url('../Appleold/assets/image');
+    background-size: cover;
+    border: 1px solid black;
+    margin: 10px auto;
+}
+
+.caja3 {
+    max-width: 400px;
+    height: 265px;
+    display: block;
+    border: 1px solid black;
+    margin: 10px auto;
+    background: url('prox.jpeg') center center no-repeat;
+}
